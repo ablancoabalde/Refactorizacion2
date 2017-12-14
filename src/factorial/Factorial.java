@@ -1,38 +1,23 @@
-
 package factorial;
 
-
+/**
+ * Ejercicio2: Refactorización y JavaDOC
+ *
+ * @author ablancoabalde
+ */
 public class Factorial {
 
-
     public static void main(String[] args) {
-
-
-    int j;
-    int f;
-
-  
-   j = 8;    
-   
-
-    
-   int i;
-   if (j == 0)
-f = 1;
-   else
-   {
-f = 1;
-for (i = j; i >= 1; i--)
-{
-    f = f * i;
-}
-   }    
-  
- 
-
-System.out.println(f); 
-
+        /**
+         * Instancio una variable de la clase Calculos, para hacer la llamada a
+         * los metodos
+         */
+        Calculo calc=new Calculo();
+        /**
+         * Muestro por pantalla el resultado del calculo
+         */
+        System.out.println(calc.CalcNumero(8));
 
     }
-    
+
 }
